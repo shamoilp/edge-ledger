@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edge-ledger"
+version = "0.1.0"
+description = "Is this stock-selection signal real? Per-date IC, a multiplicity ledger, permutation tests and a purged walk-forward."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "shamoilp" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+edge-ledger = "edge_ledger.cli:main"
+
+[project.urls]
+Source = "https://github.com/shamoilp/edge-ledger"
+
+[tool.setuptools]
+packages = ["edge_ledger"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

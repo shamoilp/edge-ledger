@@ -1,0 +1,8 @@
+edge-ledger
+Copyright 2026 shamoilp
+
+This product includes software derived from QuantJourney Backtester
+(https://github.com/QuantJourneyOrg/quantjourney-bt), Copyright (c) 2026
+QuantJourney, licensed under the Apache License, Version 2.0.
+edge_ledger/walkforward.py is a modified port of its walk-forward fold,
+purge, overfit-metric and interpretation code.
